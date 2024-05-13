@@ -6,7 +6,7 @@ const passwordText = passwordInput.value;
 
 emailInput.addEventListener("mouseover", ()=> {
     emailInput.focus();
-});m
+});
 
 passwordInput.addEventListener("mouseover", ()=> {
     passwordInput.focus();
