@@ -28,6 +28,9 @@ header a {
   gap: 10px;
   cursor: pointer;
 }
+header a img {
+  width: 50px;
+}
 header #login {
   border-right: 3px solid white;
   padding-right: 10px;
