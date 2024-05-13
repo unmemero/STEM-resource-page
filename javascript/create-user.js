@@ -4,6 +4,3 @@ const email = document.getElementById('userEmail').value;
 const password = document.getElementById('userPassword').value;
 const passwordConfirmation = document.getElementById('userPasswordConfirm').value;
 
-
-
-
