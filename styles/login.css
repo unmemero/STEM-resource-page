@@ -1,0 +1,39 @@
+main form {
+  background: black;
+  padding: 30px;
+  border-radius: 15px;
+  border: silver solid 7px;
+  height: auto;
+}
+main form label {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+main form input {
+  margin-bottom: 20px;
+  border: solid 2px white;
+  color: white;
+  background: black;
+  border-radius: 7px;
+  font-size: 1.2em;
+  padding: 4px;
+  text-align: center;
+}
+main form button {
+  color: rgb(255, 255, 255);
+  background: radial-gradient(rgb(2, 11, 14), darkblue);
+  font-weight: bold;
+  font-size: 1.0125em;
+  padding: 10px;
+  border-radius: 15px;
+  border: solid 2px white;
+  transition: 0.2s ease-in;
+}
+main form button:hover {
+  background: aqua;
+  color: black;
+  border: solid 2px silver;
+}
+main form button:active {
+  background: green;
+}/*# sourceMappingURL=login.css.map */
