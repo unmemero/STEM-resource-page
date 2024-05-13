@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>New User</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="shortcut icon" href="../img/main logo.ico" type="image/x-icon">
 </head>
 <body>
@@ -32,23 +32,34 @@
         </div>
     </header>
     <main>
-        <form action="../javascript/login.js" method="post">
+        <form action="new_user.js" method="post">
+            <label for="First Name">First Name</label>
+            <br>
+            <input type="text" name="firstname" id="userFirstName" placeholder="John">
+            <br>
+            <label for="Last Name">Last Name</label>
+            <br>
+            <input type="text" name="lastname" id="userLastName" placeholder="Doe">
+            <br>
             <label for="email">Email</label>
             <br>
-            <input type="email" placeholder="email@example.com" name="email" id="userEmail">
+            <input type="email" name="email" id="userEmail" placeholder="johndoe@eample.com">
             <br>
             <label for="password">Password</label>
             <br>
-            <input type="password" name="password" id="userPassword" placeholder="Your Password Here">
+            <input type="password" name="password" id="userPassword" placeholder="example123!">
             <br>
-            <button type="submit" id="submitButton">Submit</button>
+            <label for="Confirm password">Confirm password</label>
+            <br>
+            <input type="password" name="password" id="userPasswordConfirm" placeholder="example123!">
+            <br>
+            <button type="submit">Submit</button>
         </form>
-        <p>New user. Start <a href="./create-user.html">here</a></p>
+        <p>Have an account? <a href="./login.html">Log in</a></p>
     </main>
     <footer>
         <hr>
         <p>Copyright &copy; Rafael Garcia & Karina Rivera</p>
     </footer>
-    <script src="../javascript/login.js"></script>
 </body>
 </html>

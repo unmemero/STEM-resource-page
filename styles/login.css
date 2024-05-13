@@ -1,4 +1,8 @@
+main {
+  font-weight: bold;
+}
 main form {
+  margin-top: 45px;
   background: black;
   padding: 30px;
   border-radius: 15px;
@@ -36,4 +40,21 @@ main form button:hover {
 }
 main form button:active {
   background: green;
+}
+main p a {
+  color: white;
+  text-decoration: none;
+  background: black;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: 0.1s ease-in;
+}
+main p a:hover {
+  background-color: aqua;
+  color: black;
+}
+main p a:active {
+  background: green;
+  color: white;
 }/*# sourceMappingURL=login.css.map */

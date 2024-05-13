@@ -1,5 +1,7 @@
 main{
+    font-weight: bold;
     & form{
+        margin-top: 45px;
         background: black;
         padding: 30px;
         border-radius: 15px;
@@ -38,5 +40,24 @@ main{
             }
         }
 
+    }
+    & p{
+        & a{
+            color: white;
+            text-decoration: none;
+            background:black;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid white;
+            transition: 0.1s ease-in;
+            &:hover{
+                background-color: aqua;
+                color: black;
+            }
+            &:active{
+                background: green;
+                color: white;
+            }
+        }
     }
 }
