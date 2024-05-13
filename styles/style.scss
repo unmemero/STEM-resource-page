@@ -5,8 +5,6 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    max-width: 100vw;
-    max-height: 100vh;
     background: radial-gradient($less_dark_blue,$my_dark_blue) no-repeat;
 }
 
@@ -53,13 +51,14 @@ header{
 main{
     color: white;
     min-height: 70vh;
-    height: 82vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 40px;
-
+    position: relative;
+    padding-bottom: 30px;
     & .searchbar{
         display: flex;
         &-text{
@@ -96,6 +95,8 @@ main{
         &-link{
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             gap: 10px;
             text-decoration: none;
             & img{
@@ -132,10 +133,33 @@ main{
 
 footer{
     color: white;
+    position: relative;
     & hr{
         width: 70vw;
     }
     & p{
         text-align: center;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 120vh;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 15px;
+    }
+
+    main .links{
+        flex-direction: column;
+        &-link span{
+            text-align: center;
+        }
     }
 }
