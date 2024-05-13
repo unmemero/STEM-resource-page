@@ -1,0 +1,20 @@
+header {
+  gap: 50px;
+}
+header .links {
+  display: flex;
+  gap: 45px;
+}
+header .links-link {
+  border-right: 3px solid white;
+  padding-right: 5px;
+  transition: 0.1s ease-in;
+}
+header .links-link:hover {
+  color: aqua;
+  border-right: solid 5px aqua;
+}
+header .links-link:active {
+  color: green;
+  border-right: green solid 5px green;
+}/*# sourceMappingURL=header.css.map */

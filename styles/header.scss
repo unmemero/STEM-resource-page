@@ -1,0 +1,20 @@
+header{
+    gap: 50px;
+    & .links{
+        display: flex;
+        gap: 45px;
+        &-link{
+            border-right: 3px solid white;
+            padding-right: 5px;
+            transition: 0.1s ease-in;
+            &:hover{
+                color: aqua;
+                border-right: solid 5px aqua;
+            }
+            &:active{
+                color: green;
+                border-right: green solid 5px green;
+            }
+        }
+    }
+}
