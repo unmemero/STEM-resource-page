@@ -1,5 +1,8 @@
 header{
     gap: 50px;
+    & #menu-toggle{
+        display: none;
+    }
     & .links{
         display: flex;
         gap: 45px;
@@ -21,8 +24,29 @@ header{
 
 @media (max-width: 768px){
     header{
+        gap: 25px;
+        flex-direction: row;
+        & #menu-toggle{
+            display: block;
+            border: solid 2px white;
+            border-radius: 5px;
+            background: black;
+            color: white;
+            cursor: pointer;
+            transition: 0.1s ease-in;
+            &:hover{
+                background: blue;
+            }
+            &:active{
+                background: aqua;
+            }
+        }
         & .links{
-            flex-direction: column;
+            display: none;
+            & open{
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }

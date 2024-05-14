@@ -3,7 +3,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  background: radial-gradient(rgb(93, 74, 205), rgb(0, 0, 112)) no-repeat;
+  height: 100%;
+  background: radial-gradient(rgb(93, 74, 205), rgb(0, 0, 112));
 }
 
 .material-symbols-outlined {

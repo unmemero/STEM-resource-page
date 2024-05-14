@@ -1,6 +1,9 @@
 header {
   gap: 50px;
 }
+header #menu-toggle {
+  display: none;
+}
 header .links {
   display: flex;
   gap: 45px;
@@ -20,7 +23,30 @@ header .links-link:active {
 }
 
 @media (max-width: 768px) {
+  header {
+    gap: 25px;
+    flex-direction: row;
+  }
+  header #menu-toggle {
+    display: block;
+    border: solid 2px white;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+  }
+  header #menu-toggle:hover {
+    background: blue;
+  }
+  header #menu-toggle:active {
+    background: aqua;
+  }
   header .links {
+    display: none;
+  }
+  header .links open {
+    display: flex;
     flex-direction: column;
   }
 }/*# sourceMappingURL=header.css.map */

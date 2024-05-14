@@ -5,7 +5,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background: radial-gradient($less_dark_blue,$my_dark_blue) no-repeat;
+    height: 100%;
+    background: radial-gradient($less_dark_blue,$my_dark_blue) ;
 }
 
 .material-symbols-outlined {
