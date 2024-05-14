@@ -1,7 +1,11 @@
 header {
   gap: 50px;
 }
-header #menu-toggle {
+header .title {
+  display: flex;
+  gap: 20px;
+}
+header .title #menu-toggle {
   display: none;
 }
 header .links {
@@ -24,11 +28,15 @@ header .links-link:active {
 
 @media (max-width: 768px) {
   header {
-    gap: 25px;
-    flex-direction: row;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  header #menu-toggle {
+  header .title #menu-toggle {
     display: block;
+    height: 35px;
+    margin-top: 15px;
     border: solid 2px white;
     border-radius: 5px;
     background: black;
@@ -36,16 +44,17 @@ header .links-link:active {
     cursor: pointer;
     transition: 0.1s ease-in;
   }
-  header #menu-toggle:hover {
+  header .title #menu-toggle:hover {
     background: blue;
   }
-  header #menu-toggle:active {
+  header .title #menu-toggle:active {
     background: aqua;
   }
   header .links {
     display: none;
+    gap: 15px;
   }
-  header .links open {
+  header .links.open {
     display: flex;
     flex-direction: column;
   }
