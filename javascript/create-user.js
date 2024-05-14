@@ -14,10 +14,10 @@ passwordToggle.addEventListener('click',(e) => {
     e.preventDefault();
     if(password.type == "password"){
         password.type = "text";
-        password.innerHTML = "<span class=\"material-symbols-outlined\">visibility_off</span>";
+        passwordToggle.innerHTML = "<span class=\"material-symbols-outlined\">visibility_off</span>";
     }else{
         password.type = "password";
-        password.innerHTML = "<span class=\"material-symbols-outlined\">visibility</span>";
+        passwordToggle.innerHTML = "<span class=\"material-symbols-outlined\">visibility</span>";
     }
 });
 
@@ -26,9 +26,9 @@ confirmToggle.addEventListener("click",(e)=>{
     e.preventDefault();
     if(passwordConfirmation.type == "password"){
         passwordConfirmation.type = "text";
-        passwordConfirmation.innerHTML = "<span class=\"material-symbols-outlined\">visibility_off</span>";
+        confirmToggle.innerHTML = "<span class=\"material-symbols-outlined\">visibility_off</span>";
     }else{
         passwordConfirmation.type = "password";
-        passwordConfirmation.innerHTML = "<span class=\"material-symbols-outlined\">visibility</span>";
+        confirmToggle.innerHTML = "<span class=\"material-symbols-outlined\">visibility</span>";
     }
 });
