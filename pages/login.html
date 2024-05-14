@@ -17,29 +17,34 @@
             <h2>STEM resources</h2>
         </a>
         <div class="links">
-            <a href="./pages/scholarships.html" class="links-link"><span class="material-symbols-outlined">
+            <a href="./scholarships.html" class="links-link"><span class="material-symbols-outlined">
                 school
                 </span>Scholarships</a>
-            <a href="./pages/internships.html" class="links-link"><span class="material-symbols-outlined">
+            <a href="./internships.html" class="links-link"><span class="material-symbols-outlined">
                 science
                 </span>Internships</a>
-            <a href="./pages/entry-level-positions.html" class="links-link"><span class="material-symbols-outlined">
+            <a href="./entry-level-positions.html" class="links-link"><span class="material-symbols-outlined">
                 work
                 </span>Entry Level Jobs</a>
-            <a href="./pages/student-organizations.html" class="links-link"><span class="material-symbols-outlined">
+            <a href="./student-organizations.html" class="links-link"><span class="material-symbols-outlined">
                 groups
                 </span>Student Organizations</a>
         </div>
     </header>
     <main>
-        <form action="../javascript/login.js" method="post">
+        <form>
             <label for="email">Email</label>
             <br>
             <input type="email" placeholder="email@example.com" name="email" id="userEmail">
             <br>
             <label for="password">Password</label>
             <br>
-            <input type="password" name="password" id="userPassword" placeholder="Your Password Here">
+            <div class="password-input">
+                <input type="password" name="password" id="userPassword" placeholder="Password">
+                <button id="password-toggle">
+                    <span class="material-symbols-outlined">visibility</span>
+                </button>
+            </div>
             <br>
             <button type="submit" id="submitButton">Submit</button>
         </form>

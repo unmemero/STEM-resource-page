@@ -62,6 +62,9 @@ main{
     gap: 40px;
     position: relative;
     padding-bottom: 30px;
+    & img{
+        width: 400px;
+    }
     & .searchbar{
         display: flex;
         &-text{
@@ -90,6 +93,7 @@ main{
                 background: green;
                 color: white;
             }
+           
         }
     }
     & .links{
@@ -142,7 +146,7 @@ footer{
     }
     & p{
         text-align: center;
-        padding-bottom: 15px;
+        padding-bottom: 55px;
     }
 }
 

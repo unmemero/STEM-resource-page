@@ -18,3 +18,11 @@ header{
         }
     }
 }
+
+@media (max-width: 768px){
+    header{
+        & .links{
+            flex-direction: column;
+        }
+    }
+}

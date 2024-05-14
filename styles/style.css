@@ -57,6 +57,9 @@ main {
   position: relative;
   padding-bottom: 30px;
 }
+main img {
+  width: 400px;
+}
 main .searchbar {
   display: flex;
 }
@@ -133,7 +136,7 @@ footer hr {
 }
 footer p {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 55px;
 }
 
 @media (max-width: 768px) {

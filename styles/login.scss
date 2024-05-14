@@ -1,5 +1,9 @@
+body{
+    max-width: 100vw;
+}
 main{
     font-weight: bold;
+    width: 100vw;
     & form{
         margin-top: 45px;
         background: black;
@@ -39,7 +43,31 @@ main{
                 background: green;
             }
         }
+        & .password-input{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 40px;
 
+            & #password-toggle {
+                background: none;
+                border: none;
+                color: grey;
+                position: relative;
+                right: 45px;
+                bottom: 8px;
+                cursor: pointer;
+            }
+            & #confirm-toggle {
+                background: none;
+                border: none;
+                color: grey;
+                position: relative;
+                right: 45px;
+                bottom: 8px;
+                cursor: pointer;
+            }
+        }
     }
     & p{
         & a{
